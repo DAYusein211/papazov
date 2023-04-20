@@ -1,0 +1,118 @@
+
+.background
+{
+  top:0;
+  z-index: 0;
+  left:0;
+  position:absolute;
+  height:200vh;
+   background-image: url('../../public/clouds.svg');
+   width:100vw;
+}
+.homeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav
+{
+  position:fixed;
+  top:0;
+  width:95vw;
+  height:100px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 10px;
+}
+
+.link{
+  text-decoration: none;
+  color:black;
+  font-size:2rem;
+  transition-duration: 0.2s;
+}
+.link:hover
+{
+  
+  color:rgb(135, 135, 135);
+}
+.main 
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+}
+.center
+{
+  text-align: center;
+}
+.p
+{
+  width:40rem;
+  font-size:1.5rem;
+  text-align: center;
+}
+.p1
+{
+  font-size:2rem;
+  font-weight: bold;
+}
+.h1
+{
+  font-size:2.4rem;
+}
+@keyframes arrow
+{
+    50%{top:calc(100vh - 75px);opacity:0.5;};
+}
+.arrows
+{
+  position:absolute;
+  top:calc(100vh - 70px);
+  animation:arrow 1s infinite ease-in-out;
+}
+.div 
+{
+  
+  width:100vw;
+  height:100vh;
+  position:absolute;
+  top:100vh;
+  left:0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.container
+{
+  background-color: rgba(255, 255, 255, 0.036);
+  border: 1px solid rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 4px 81px rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(38.5px);
+  border-radius: 17px;
+  width:50vw;
+  height:60vh;
+  display:flex;
+  align-items: center;
+  padding-top:50px;
+  flex-direction: column;
+}
+.map
+{
+   border-radius: inherit;
+   width:80%;
+   height:60%;
+   background-color: aqua;
+}
+.percentage
+{
+  font-size:2rem;
+  text-align: left;
+  position:relative;
+  top: 5%;
+  font-weight: bold;
+}
